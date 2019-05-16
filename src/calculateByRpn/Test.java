@@ -1,5 +1,6 @@
 package calculateByRpn;
 
+
 public class Test {
 	
 	public static void main(String[] args) {
@@ -11,6 +12,5 @@ public class Test {
 
 		int value = RPN.calculate(rpn);
 		System.out.println("通过逆波兰式计算得到值为:" + value);
-
 	}
 }
