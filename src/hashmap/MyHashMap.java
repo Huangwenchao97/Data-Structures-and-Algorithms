@@ -58,15 +58,31 @@ public class MyHashMap<K, V>{
 		private Node<K, V> next;
 		
 		public Node(int hash, K key, V value, Node<K, V> next) {
-			this.hash = hash;
+			this.setHash(hash);
 			this.key = key;
 			this.value = value;
-			this.next = next;
+			this.setNext(next);
 		}
 		
 		public K getKey()        { return key; }
         public V getValue()      { return value; }
         public String toString() { return key + "=" + value; }
+
+		public int getHash() {
+			return hash;
+		}
+
+		public void setHash(int hash) {
+			this.hash = hash;
+		}
+
+		public Node<K, V> getNext() {
+			return next;
+		}
+
+		public void setNext(Node<K, V> next) {
+			this.next = next;
+		}
 	}
 	
 	
